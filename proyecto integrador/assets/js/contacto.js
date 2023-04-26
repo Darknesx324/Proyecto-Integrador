@@ -1,30 +1,30 @@
-//Archivo contatco .js envio de formulario.
-    emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
-    const btn = document.getElementById('button-contacto');
+//Envio Formulario Contacto
+emailjs.init('EHYeh76_DvjBm9MUV')
+const btn = document.getElementById('button-contacto');
 
-    document.getElementById('form')
-    .addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    
 
-    const serviceID = 'default_service';
-    const templateID = 'template_y735lib';
 
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
+        const serviceID = 'default_service';
+        const templateID = 'template_d8c6vyp';
 
-            Swal.fire({
-                icon: 'success',
-                title: 'Se envió el mensaje',
-                timer: 2500,
-                showConfirmButton: false
-              })
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
 
-        window.location = "contacto.html";
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Se envió el mensaje',
+                    timer: 2500,
+                    showConfirmButton: false
+                })
 
-        }, (err) => {
-        btn.value = 'Send Email';
-        alert(JSON.stringify(err));
-        });
+                window.location = "contacto.html";
+
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
     });
