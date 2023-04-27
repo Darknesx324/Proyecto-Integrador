@@ -35,7 +35,7 @@ img{
 /*menu*/
 header{
     background:#90ee90;
-    color:#f2f2f2;
+    color: #356682;;
     padding: 1rem 0;
     position: fixed;
     left: 0;
@@ -217,7 +217,7 @@ main{
 .container-circulos{
     /* display:flex; */
     width: 100%;
-    padding: 20px;
+    padding: 19px;
 }
 .container-imagen{
     width: 33%;
@@ -233,7 +233,7 @@ main{
 .circulo{    
     width: 60%;
     border-radius: 50%;
-    border:2px solid  #DF691A;
+    border:5px solid  #35682d;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 .ver-todo{
@@ -254,7 +254,7 @@ main{
 
 /*contacto*/
 .container-contacto{
-    background-image: url("../img/bg-contacto.jpg");
+    background-image: url("../img/greencontacto.jpg");
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin:0;
@@ -335,6 +335,9 @@ main{
 
 /*productos-card*/
 .container-productos{
+    background-image: url("../img/Productos.jpg");
+    background-size: 100vw 100vh;
+        background-attachment: fixed;
     width: 100%;
     max-width: 1200px;
     height: auto;
